@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #C442A5;
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #C480A5;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFFFF;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>Series</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="#">The 100</a></li>
+      <li><a href="#">Gilmore girls</a></li>
+      <li><a href="#">The vamppire diaries</a></li>
+      <li><a href="#">WandaVision</a></li>
+      <li><a href="#">Outer banks</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>Dit zijn de series die wij leuk vinden en aanraden</h1>
+    <p>We zorgen dat het geupdate blijft, dus als je alles hebt gezien kom dan gerust terug want dan staan er weer nieuwe series bij.</p>
+
+  </article>
+</section>
+
+
+</body>
+</html>
