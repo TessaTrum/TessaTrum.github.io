@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #C442A5;
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #C480A5;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFFFF;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>The 100</h2>
+</header>
+
+  
+  <article>
+    <h1></h1>
+    <p>▷ 7 seizoenen</p>
+    <p>▷ Het is voor 16 jaar en ouder</p>
+    <p>▷ Genre: scifi-fi</p>
+    <p>▷ Cast: Eliza Taylor (Clarke Griffin) / Bob Morley (Bellamy Blake) / Marie Avgeropoulos (Octavia Blake) / Alycia Debnam-Carey (Lexa) / Lindsey Morgan (Raven Reyes)</p>
+    <p>▷ Samenvatting: 97 jaar geleden werd bijna de gehele aardbevolking uitgeroeid door een nucleaire oorlog. Er waren 400 overlevenden. Dit waren de bewoners van 12 internationale ruimtestations die zich in een omloopbaan rond de aarde bevonden. Drie generaties later is deze groep uitgegroeid tot een samenleving van zo’n 4000 personen. De 12 ruimtestations vormen nu samen een zogenaamde ‘Ark’. Het leven aan boord wordt steeds moeilijker. Alle voorraden beginnen namelijk op te raken en de leiders van de Ark doen er alles aan om de populatie zo veel mogelijk onder controle te houden. Zo worden zelfs kleine misdaden zwaar bestraft. Op een dag worden er 100 jonge delinquenten naar de aardoppervlakte gestuurd om te onderzoeken of er weer leven op de planeet mogelijk is. </p>
+    <p>▷ Onze mening: Wij vinden het een erg leuke serie. Het is ook zeker een aanrader als je van series met geweld houd. Het is geen aanrader als je niet goed tegen bloed kan of als je niet tegen dood kan.</p> 
+
+
+  </article>
+</section>
+
+
+</body>
+</html>
