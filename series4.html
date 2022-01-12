@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #C442A5;
+  padding: 1px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #C480A5;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #FFFFFF;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h2>WandaVision</h2>
+</header>
+
+  
+  <article>
+    <h1></h1>
+    <p>▷ 1 seizoenen </p>
+    <p>▷ Het is voor 12 jaar en ouder</p>
+    <p>▷ Genre: romantiek, drama en sciencefiction </p>
+    <p>▷ Cast: Elizabeth Olsen (Wanda Maximoff), Paul Bettany (Vision), Kathryn Hahn (Agatha Harkness) </p>
+    <p>▷ Samenvatting: De serie gaat over het liefdesverhaal tussen Wanda Maximoff (Scarlet Witch) en Vision. Wanda en Vision leven in een komedie, Maar waarom? en hoe?  </p>
+    <p>▷ Onze mening: het is een mooie serie meer weet ik niet. Ik vind het persoonlijk echt een aanrader  </p> 
+
+
+  </article>
+</section>
+
+
+</body>
